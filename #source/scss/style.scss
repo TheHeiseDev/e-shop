@@ -1,0 +1,47 @@
+// Обнуляющий файл стилей  ##########################
+@import "../style/reset";
+// Стили модулей  ##########################
+@import "../style/header";
+@import "../style/intro";
+@import "../style/product";
+@import "../style/slider";
+@import "../style/trand";
+@import "../style/baner";
+@import "../style/services";
+@import "../style/instagram";
+@import "../style/footer";
+
+// - Импорт шрифтов ##########################
+@import url("https://fonts.googleapis.com/css2?family=Cookie&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Montserrat:wght@400;500;700;800&display=swap");
+// Переменные для всего проекта
+:root {
+  --red: #dc3545;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --black: #111111;
+  --dark-red: #ca1515;
+  --dark: #343a40;
+  --green: #28a745;
+  --black: black;
+  --light: #f8f9fa;
+
+  --font-color: black;
+  --montserrat: "Montserrat", sans-serif;
+  --cookie: "Cookie", cursive;
+}
+
+body {
+  line-height: 1.5;
+  font-size: 15px;
+  color: #111111;
+  font-family: var(--montserrat);
+  min-height: 100%;
+  margin: 0;
+}
+
+.container {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 30px;
+}

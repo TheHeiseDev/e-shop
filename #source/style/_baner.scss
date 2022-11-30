@@ -1,0 +1,128 @@
+.baner {
+}
+.baner .container {
+  @media (max-width: 580px) {
+    & {
+      padding: 0 !important;
+    }
+  }
+}
+.baner__wrapper {
+  display: flex;
+
+  justify-content: center;
+  @media (max-width: 992px) {
+    flex-direction: column;
+  }
+}
+.baner__left {
+  flex: 0 0 50%;
+}
+.discount__pic {
+  height: 100%;
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.baner__right {
+  background: #f4f4f4;
+  flex: 0 0 50%;
+  //   max-width: 50%;
+}
+.discount__text {
+  @media only screen and (max-width: 767px) {
+    padding: 75px 40px 50px;
+    height: auto;
+  }
+  padding: 75px 90px 50px;
+  text-align: center;
+
+  & a {
+    font-size: 14px;
+    color: #111111;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+    padding: 0 0 3px;
+    display: inline-block;
+    position: relative;
+    transition: opacity 0.3s ease 0s;
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 2px;
+      width: 100%;
+      background: #ca1515;
+    }
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+.discount__text__title {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 60px;
+  & span {
+    font-size: 12px;
+    color: #111111;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  & h2 {
+    font-size: 60px;
+    color: #ca1515;
+    font-family: var(--cookie);
+    line-height: 46px;
+    margin-bottom: 10px;
+  }
+  & h5 {
+    color: #ca1515;
+    font-weight: 700;
+  }
+
+  & h5 span {
+    font-size: 14px;
+    color: #111111;
+    margin-right: 4px;
+  }
+}
+.discount__text__title:after {
+  position: absolute;
+  left: 50%;
+  top: -38px;
+  height: 183px;
+  width: 183px;
+  background: #ffffff;
+  content: "";
+  border-radius: 50%;
+  z-index: -1;
+  margin-left: -91.5px;
+}
+.discount__countdown {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+.countdown__item {
+  flex: 0 0 25%;
+  display: flex;
+  justify-content: center;
+
+  align-items: baseline;
+
+  & span {
+    font-size: 25px;
+    font-weight: 600;
+    margin-right: 5px;
+  }
+  & p {
+  }
+}
